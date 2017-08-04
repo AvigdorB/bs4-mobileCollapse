@@ -7,11 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style type="text/css">footer { background: #181b1e; color: #a8a8a9; }
+		footer a { color: #a8a8a9; }
+		footer a[aria-expanded=true], footer a:hover { color: #fff; }
+		footer .footerCollapseTitle { font-weight: bold; color: #fff; }
+		@media (max-width: 767px) { footer .footerCollapseTitle:before { display: inline-block;content: "-"; margin-right: 1.5%; }
+		  footer .footerCollapseTitle.collapsed:before { content: "+"; } }
+		footer ul { list-style: none; margin: 0 0 1em; padding: 0; }
+		footer ul li { margin: 0; padding: 0; }
+		footer ul a { color: #fff !important; }
+		footer .row { padding-top: 3em; border-top: 1px solid #7b7e81; clear: both; }	
+		@media (max-width: 767px) { footer .footerCollapseTitle { border-top: 1px solid #7b7e81; display: block; line-height: 2.5; }		  
+		  footer ul { padding: 0 1.4em; } }
+		@media (min-width: 767px) { footer ul.collapse, footer ul.collapsing, footer ul.collapse.show, footer ul:not(.row) { height: auto !important; display: block !important; margin-top: 1em !important; } }
+		@media (min-width: 1700px) { footer .row { -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+		  footer .col-xl-4 { -webkit-box-flex: 0; -webkit-flex: 0 0 23%; -ms-flex: 0 0 23%; flex: 0 0 23%; max-width: 23%; padding-right: 3%; }
+		  footer .col-xl-2 { -webkit-box-flex: 0; -webkit-flex: 0 0 11%; -ms-flex: 0 0 11%; flex: 0 0 11%; max-width: 11%; } }
+		@media (min-width: 1200px) and (max-width: 1700px) { footer .col-xl-2:nth-child(6) { margin-left: 33.3%; } }
+	</style>
 </head>
 
 <body>
     <footer class="container">
-        <ul class="row">
+        <ul class="row list-unstyled"">
             <li class="col-12 col-md-4 col-lg-3 col-xl-2">
                 <a href="#">menu-1</a>
                 <ul>
